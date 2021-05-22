@@ -62,7 +62,7 @@
 	          <div class="social d-flex text-center">
 	          	<a href="/adminlogin" class="px-2 py-2 mr-md-1 rounded"><span class="ion-logo-facebook mr-2"></span> ADMIN</a>
 	          	<a href="/facultylogin" class="px-2 py-2 ml-md-1 rounded"><span class="ion-logo-twitter mr-2"></span> FACULTY</a>
-				  <a href="/admin" class="px-2 py-2 ml-md-1 rounded"><span class="ion-logo-twitter mr-2"></span> ADD FACULTY</a>
+				 
 	          </div>
 		      </div>
 				</div>

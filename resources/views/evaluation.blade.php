@@ -12,6 +12,17 @@
 </head>
 
 <body background="https://images.pexels.com/photos/6697294/pexels-photo-6697294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"  style="height: 100%; background-position: center; background-repeat: no-repeat; background-size: cover;">
+@if(Session::get('success'))
+            <div class="alert alert-success">
+            {{Session::get('success')}}
+            </div>
+     @endif
+    @if(Session::get('fail'))
+            <div class="alert alert-danger">
+            {{Session::get('fail')}}
+            </div>
+    @endif
+ 
     <div class="container">
         <div class="row">
             <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">

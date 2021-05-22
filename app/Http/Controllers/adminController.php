@@ -57,16 +57,16 @@ class adminController extends Controller
 
 
         $user->save();
-
-
-        if($user)         
-        {             
-         echo "success";     
-        }         
-        else        
-        {             
-             echo "fail";      
+        
+        if($user)
+        {
+            return back()->with('success','Uploaded successfully.');
         }
+        else
+        {
+            return back()->with('fail','Something wrong,try again later');
+        }
+        
 
  
     }
