@@ -162,6 +162,16 @@ class userController extends Controller
 
         $user->save();
 
+
+        if($user)
+        {
+            return back()->with('success','You have registered successfully.');
+        }
+        else
+        {
+            return back()->with('fail','Something wrong,try again later');
+        }
+        
         }
 
    

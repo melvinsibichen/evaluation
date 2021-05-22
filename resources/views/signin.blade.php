@@ -14,7 +14,17 @@
 
 
 <body background="https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"  style="height: 100%; background-position: center; background-repeat: no-repeat; background-size: cover;">
-     
+@if(Session::get('success'))
+            <div class="alert alert-success">
+            {{Session::get('success')}}
+            </div>
+     @endif
+    @if(Session::get('fail'))
+            <div class="alert alert-danger">
+            {{Session::get('fail')}}
+            </div>
+    @endif
+
     <div class="container">
     <div class="row">
     <div class="col col-12 col-sm-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7 ">
@@ -94,9 +104,12 @@
                     <td><input name="password" type="password" class="form-control">
                     <span class="text-danger">@error('password'){{$message}} @enderror  </span></td>
                 </tr>
+               
                 <tr>
-                    <td></td>
-                    <td><button class="btn btn-success">submit</button></td>
+             
+                    <td><button class="btn btn-success">Submit</button></td>
+
+                    <td> <a href="/" class="btn btn-primary">Login</a></td>
                 </tr>
     </table>
     </form>
